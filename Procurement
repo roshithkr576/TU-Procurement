@@ -649,7 +649,6 @@ async function buildLpoDoc(returnDoc=false){
   const y2 = finalY + 26;
   doc.setFont('helvetica','normal'); doc.setFontSize(9);
   doc.text('Payment Terms: Bank Transfer', margin, y2);
-  doc.text('Payment Terms: Bank Transfer', margin, y2);
   doc.text('Prepared By: Mr. Roshith', margin, y2 + 8);
   doc.text('Approved By: Mr. Bimal Lamichhane', 210 - margin - 60, y2 + 8);
 
