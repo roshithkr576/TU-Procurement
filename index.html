@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>TU Procurement Portal — Madang LPO</title>
+  <title>TU Procurement Portal — PHO7 LPO</title>
 
   <!-- Libraries -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -49,10 +49,10 @@
 <body>
   <header>
     <div class="brand">
-      <img id="appLogo" src="" alt="Madang Logo" style="width:48px;height:48px;border-radius:6px;object-fit:contain" />
+      <img id="appLogo" src="" alt="PHO7 Logo" style="width:48px;height:48px;border-radius:6px;object-fit:contain" />
       <div>
         <h1>TU Procurement Portal</h1>
-        <div class="small muted">Madang Korean Restaurant — Offline LPO Management</div>
+        <div class="small muted">PHO7 Vietnamese Restaurant — Offline LPO Management</div>
       </div>
     </div>
 
@@ -119,7 +119,7 @@
 
     <section id="section-lpo" class="card" style="display:none">
       <div style="display:flex;justify-content:space-between;align-items:center">
-        <div><h2 style="margin:0">Create LPO</h2><div class="small muted">Madang LPO format — export PDF</div></div>
+        <div><h2 style="margin:0">Create LPO</h2><div class="small muted">PHO7 LPO format — export PDF</div></div>
         <div style="display:flex;gap:8px">
           <button onclick="previewLpo()">Preview PDF</button>
           <button onclick="generateLpo()">Download PDF</button>
@@ -584,7 +584,7 @@ async function buildLpoDoc(returnDoc=false){
   }catch(e){ console.warn('Logo add failed', e); }
 
   // Header text right
-  doc.setFontSize(12); doc.setFont('helvetica','bold'); doc.text('Madang Korean Restaurant L.L.C. - S.P.C.', 210 - margin, y, { align: 'right' });
+  doc.setFontSize(12); doc.setFont('helvetica','bold'); doc.text('PHO7 Vietnamese Restaurant', 210 - margin, y, { align: 'right' });
   y += 6;
   doc.setFontSize(9); doc.setFont('helvetica','normal'); doc.text('Holiday Inn, Dhafeer Street, 31st, Abu Dhabi, U.A.E.', 210 - margin, y, { align: 'right' }); y+=5;
   doc.text('Tel: +971-502081210', 210 - margin, y, { align: 'right' }); y += 8;
@@ -700,3 +700,4 @@ function viewVendorProducts(id){ $('prodVendorFilter').value = id; showSection('
 </script>
 </body>
 </html>
+
